@@ -4,23 +4,26 @@ import React from 'react'
 
 const textCard = "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.";
 const textButton = "GO SOMEWHERE"
+const paco = "vale"
 
 function App() {
   
   return (
-    <div>
+    <>
       <MenuNavegacion />
-      <main className='row d-flex flex-wrap align-items-center justify-content-center'>
+      <div className='m-auto d-flex w-75'>
+        {Card(textCard, textButton)}
+        {Card(textCard, textButton)}
+        {Card(textCard, textButton)}
+        {Card(textCard, paco)}
+      </div>
+      <div className='d-flex m-auto w-75'>
         {Card(textCard, textButton)}
         {Card(textCard, textButton)}
         {Card(textCard, textButton)}
         {Card(textCard, textButton)}
-        {Card(textCard, textButton)}
-        {Card(textCard, textButton)}
-        {Card(textCard, textButton)}
-        {Card(textCard, textButton)}
-      </main>
-    </div>
+      </div>
+    </>
   )
 }
 
